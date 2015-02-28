@@ -10,9 +10,33 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+	<div class="container">
+		<form action="validate.php" method="post" name="contact_form" autocomplete="on">
+			<p>
+				<label for="fname">First name:</label>
+				<input type="text" name="fname" id="fname" />
+			</p>
 
+			<p>
+				<label for="lname">Last name:</label>
+				<input type="text" name="lname" id="lname" />
+			</p>
 
+			<p>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" autocomplete="off" required/>
+			</p>
 
+			<p>
+				<label for="comments">In a few words, please describe how you discovered our company.</label>
+				<textarea name="comments" id="comments" rows="2" cols="40"></textarea>
+			</p>
+		
+			<input type="submit" name="submit" title="submit" value="Submit!" />
+
+			<div class="clear"></div>
+		</form>
+	</div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
     <script src="js/main.js"></script>

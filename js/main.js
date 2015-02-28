@@ -1,2 +1,2 @@
-document.body.bgColor = "LightSteelBlue";
+document.body.bgColor = "#2187B7";
 
