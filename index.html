@@ -11,15 +11,15 @@
 </head>
 <body>
 	<div class="container">
-		<form action="validate.php" method="post" name="contact_form" autocomplete="on">
+		<form action="#" method="post" name="myForm" id="myForm" autocomplete="on">
 			<p>
-				<label for="fname">First name:</label>
-				<input type="text" name="fname" id="fname" />
+				<label for="firstName">First name:</label>
+				<input type="text" name="firstName" id="firstName" required/>
 			</p>
 
 			<p>
-				<label for="lname">Last name:</label>
-				<input type="text" name="lname" id="lname" />
+				<label for="lastName">Last name:</label>
+				<input type="text" name="lastName" id="lastName" required/>
 			</p>
 
 			<p>
@@ -28,8 +28,8 @@
 			</p>
 
 			<p>
-				<label for="comments">In a few words, please describe how you discovered our company.</label>
-				<textarea name="comments" id="comments" rows="2" cols="40"></textarea>
+				<label for="message">In a few words, please describe how you discovered our company.</label>
+				<textarea name="message" id="message" rows="2" cols="40" required></textarea>
 			</p>
 		
 			<input type="submit" name="submit" title="submit" value="Submit!" />
