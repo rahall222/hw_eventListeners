@@ -1,0 +1,87 @@
+body {
+	line-height: 1.25;
+}
+
+h1, h2 {
+	font-weight: normal;
+	margin: 0;
+    padding: 0;
+}
+
+h1, li {
+	font-family: 'Bevan', cursive;
+	color: #333333;
+	letter-spacing: .2px;
+	font-size: 2em;
+}
+
+h2 {
+	font-family: 'Nixie One', cursive;
+	color: #444444;
+	font-size: 1.8em;
+}
+
+p {
+	font-family: 'Architects Daughter', cursive;
+	letter-spacing: .5px;
+	color: #444444;
+}
+
+ul {
+	margin: 0 auto;
+	padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 5% 0;
+    background-color: #ffffff;
+    vertical-align: middle;
+}
+
+li.button {
+	padding: 2%;
+}
+
+img {
+	border: none;
+	width: 100%;
+	margin: 0 auto;
+	vertical-align: middle;
+	box-shadow: -1px 1px 5px rgba(0,0,0,.2);
+}
+
+h1:hover,
+h2:hover,
+#highlight:hover {
+	cursor: pointer;
+}
+
+#container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+@media (min-width: 470px){
+	h1, h2 {
+	    display: inline-block;
+	}
+
+	h2 {
+		padding-left: 10px;
+		margin-left: 5px;
+		border-left: 1px solid orange;
+	}
+
+	li {
+		float: left;
+	    list-style-type: none;
+	    margin: 1%;
+	    width: 48%;
+	}
+
+	li.button {
+		width: 44%;
+	}
+}
