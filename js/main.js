@@ -2,7 +2,9 @@ document.body.style.backgroundColor = "#2187B7";
 
 var myForm = document.getElementById( "myForm" );
 
-myForm.addEventListener("submit", function(){
+myForm.addEventListener("submit", function(event){
+	event.preventDefault();
+
 	var firstName = document.getElementById("firstName").value;
 	console.log("The firstName is: " + firstName);
 
